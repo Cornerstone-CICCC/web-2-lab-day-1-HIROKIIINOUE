@@ -10,6 +10,7 @@ const cityMaxTemperatureDisplay = document.querySelector("#max-temperature");
 const cityMinTemperatureDisplay = document.querySelector("#min-temperature");
 const backgroundImg = document.querySelector("#background-image");
 const titleDisplay = document.querySelector("#title");
+const mainDisplay = document.querySelector("#main-display");
 
 const getCityData = async (cityName) => {
   try {
@@ -38,6 +39,7 @@ const getWeatherData = async (latitude, longitude) => {
 
 searchBtn.addEventListener("click", async (event) => {
   event.preventDefault();
+
   const searchingValue = searchInput.value;
   const cityData = await getCityData(searchingValue);
   const cityDataResult = cityData.results[0];
@@ -79,5 +81,8 @@ searchBtn.addEventListener("click", async (event) => {
 
   cityTemperatureDisplay.textContent = `${currentTemperature}℃`;
   cityMinTemperatureDisplay.textContent = `Low: ${minTemperature} ℃`;
-  cityMaxTemperatureDisplay.textContent = `High: ${maxTemperature} ℃`;
+  cityMaxTemperatureDisplay.textContent = `Max: ${maxTemperature} ℃`;
+
+  mainDisplay.classList.remove("main-hidden");
+  mainDisplay.classList.add("main-display");
 });

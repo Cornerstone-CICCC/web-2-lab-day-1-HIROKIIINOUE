@@ -13,36 +13,37 @@
         <button type="submit" id="submit">Search</button>
       </form>
     </div>
-    <div id="background-image" class="background-image-day">
-      <div id="title" class="day-title">
-        <div id="city"></div>
-        <div id="temperature"></div>
+    <main id="main-display" class="main-hidden">
+      <div id="background-image" class="background-image-day">
+        <div id="title" class="day-title">
+          <div id="city"></div>
+          <div id="temperature"></div>
+        </div>
       </div>
-    </div>
-    <div id="result-table" class="result-table-true">
-      <table border="1">
-        <tr>
-          <td class="table-title">Country</td>
-          <td class="table-contant" id="country-name"></td>
-        </tr>
-        <tr>
-          <td class="table-title">Timezone</td>
-          <td class="table-contant" id="city-timezone"></td>
-        </tr>
-        <tr>
-          <td class="table-title">Population</td>
-          <td class="table-contant" id="city-population"></td>
-        </tr>
-        <tr>
-          <td class="table-title">Tomorrow's Forecast</td>
-          <td class="table-contant id">
-            <p id="max-temperature"></p>
-            <p id="min-temperature"></p>
-          </td>
-        </tr>
-      </table>
-    </div>
-
+      <div id="result-table">
+        <table border="1">
+          <tr>
+            <td class="table-title">Country</td>
+            <td class="table-contant" id="country-name"></td>
+          </tr>
+          <tr>
+            <td class="table-title">Timezone</td>
+            <td class="table-contant" id="city-timezone"></td>
+          </tr>
+          <tr>
+            <td class="table-title">Population</td>
+            <td class="table-contant" id="city-population"></td>
+          </tr>
+          <tr>
+            <td class="table-title">Tomorrow's Forecast</td>
+            <td class="table-contant id">
+              <p id="min-temperature"></p>
+              <p id="max-temperature"></p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </main>
     <script src="./app.js"></script>
   </body>
 </html>
