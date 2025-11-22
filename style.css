@@ -99,3 +99,8 @@ td {
 .table-content {
   width: 60%;
 }
+
+.night {
+  background-color: black;
+  color: white;
+}

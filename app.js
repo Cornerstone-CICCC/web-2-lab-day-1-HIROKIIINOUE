@@ -11,6 +11,7 @@ const cityMinTemperatureDisplay = document.querySelector("#min-temperature");
 const backgroundImg = document.querySelector("#background-image");
 const titleDisplay = document.querySelector("#title");
 const mainDisplay = document.querySelector("#main-display");
+const bodyDisplay = document.querySelector("#body");
 
 const getCityData = async (cityName) => {
   try {
@@ -72,11 +73,13 @@ searchBtn.addEventListener("click", async (event) => {
     backgroundImg.classList.add("background-image-day");
     titleDisplay.classList.remove("night-title");
     titleDisplay.classList.add("day-title");
+    bodyDisplay.classList.remove("night");
   } else if (isDay === 0) {
     backgroundImg.classList.remove("background-image-day");
     backgroundImg.classList.add("background-image-night");
     titleDisplay.classList.remove("day-title");
     titleDisplay.classList.add("night-title");
+    bodyDisplay.classList.add("night");
   }
 
   cityTemperatureDisplay.textContent = `${currentTemperature}℃`;
