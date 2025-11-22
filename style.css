@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#searching-bar {
+  height: 80px;
+  width: 100%;
+}
+
+form {
+  height: 100%;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+input[type="text"] {
+  height: 40px;
+  width: 80%;
+  font-size: 20px;
+  padding: 0 20px;
+}
+button[type="submit"] {
+  height: 40px;
+  width: 20%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.background-image-day {
+  width: 100%;
+  height: 240px;
+  background: url("./images/day.jpg") no-repeat center center / cover;
+}
+
+.background-image-night {
+  width: 100%;
+  height: 240px;
+  background: url("./images/night.jpg") no-repeat center center / cover;
+}
+
+.day-title {
+  width: 60%;
+  height: 240px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 80px;
+  padding-top: 120px;
+  font-size: 42px;
+  font-weight: bold;
+}
+.night-title {
+  color: white;
+  width: 60%;
+  height: 240px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 80px;
+  padding-top: 120px;
+  font-size: 42px;
+  font-weight: bold;
+}
+
+table {
+  margin-top: 40px;
+  width: 100%;
+  height: 220px;
+}
+
+td {
+  padding: 4px 12px;
+}
+.table-title {
+  width: 40%;
+  font-weight: bold;
+}
+
+.table-content {
+  width: 60%;
+}
+
+.result-table-true {
+  width: 60%;
+  height: 400px;
+  margin: 0 auto;
+  display: block;
+}
